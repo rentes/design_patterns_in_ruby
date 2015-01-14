@@ -1,2 +1,2 @@
-# design_patterns_in_ruby
+# Design Patterns in Ruby
 The classic 23 design patterns from GoF implemented in Ruby.
