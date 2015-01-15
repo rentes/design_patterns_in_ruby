@@ -8,7 +8,7 @@ class Logger
 
   attr_writer :next_element
 
-  def initialize (mask)
+  def initialize(mask)
     @mask = mask
   end
 
