@@ -1,3 +1,4 @@
+# Logger Super class
 class Logger
   ERR = 3
   NOTICE = 5
@@ -5,25 +6,20 @@ class Logger
   @mask
   @next_element
 
+  attr_writer :next_element
+
   def initialize (mask)
     @mask = mask
   end
 
-  def set_next (log)
-    @next_element = log
-  end
-
   def message(message, priority)
-    if priority <= @mask
-      write_message(message)
-    end
-    if @next_element != nil
-      @next_element.message(message, priority)
-    end
+    write_message(message) if priority <= @mask
+    @next_element.message(message, priority) if @next_element != nil
   end
 end
 
-class Stdout_Logger < Logger
+# Stdout logger class
+class StdoutLogger < Logger
   def initialize(mask)
     super(mask)
   end
@@ -33,7 +29,8 @@ class Stdout_Logger < Logger
   end
 end
 
-class Email_Logger < Logger
+# Email logger class
+class EmailLogger < Logger
   def initialize(mask)
     super(mask)
   end
@@ -43,7 +40,8 @@ class Email_Logger < Logger
   end
 end
 
-class Stderr_Logger < Logger
+# Stderr logger class
+class StderrLogger < Logger
   def initialize(mask)
     super(mask)
   end
@@ -53,19 +51,19 @@ class Stderr_Logger < Logger
   end
 end
 
-class Chain_of_Responsibility
-  # Build the chain of responsibility
+# Build the chain of responsibility
+class ChainOfResponsibility
   def create_chain
-    logger = Stdout_Logger.new(Logger::DEBUG)
-    logger1 = Email_Logger.new(Logger::NOTICE)
-    logger.set_next(logger1)
-    logger2 = Stderr_Logger.new(Logger::ERR)
-    logger1.set_next(logger2)
+    logger = StdoutLogger.new(Logger::DEBUG)
+    logger1 = EmailLogger.new(Logger::NOTICE)
+    logger.next_element = (logger1)
+    logger2 = StderrLogger.new(Logger::ERR)
+    logger1.next_element = (logger2)
     logger
   end
 end
 
-chain = Chain_of_Responsibility.new.create_chain
+chain = ChainOfResponsibility.new.create_chain
 chain.message('Entering function y.', Logger::DEBUG)
 chain.message('Step1 completed.', Logger::NOTICE)
 chain.message('An error has occurred.', Logger::ERR)
