@@ -1,5 +1,7 @@
 require 'singleton'
 
+# The SimpleLogger class that uses Singleton pattern
+# The only instance is returned on the SimpleLogger.instance line below
 class SimpleLogger
   include Singleton
 
@@ -11,7 +13,7 @@ class SimpleLogger
   INFO = 3
 
   def initialize
-    @log = Array.new
+    @log = []
     @level = WARNING
   end
 
@@ -20,21 +22,15 @@ class SimpleLogger
   end
 
   def error(msg)
-    if @level >= ERROR
-      write_log(msg)
-    end
+    write_log(msg) if @level >= ERROR
   end
 
   def warning(msg)
-    if @level >= WARNING
-      write_log(msg)
-    end
+    write_log(msg) if @level >= WARNING
   end
 
   def info(msg)
-    if @level >= INFO
-      write_log(msg)
-    end
+    write_log(msg) if @level >= INFO
   end
 end
 
@@ -42,8 +38,8 @@ logger = SimpleLogger.instance
 
 puts "logger level is #{logger.level}"
 
-SimpleLogger.instance.info('A sample INFO message')
-SimpleLogger.instance.warning('A sample WARNING message')
-SimpleLogger.instance.error('A sample ERROR message')
+logger.info('A sample INFO message')
+logger.warning('A sample WARNING message')
+logger.error('A sample ERROR message')
 
-puts SimpleLogger.instance.log
+puts logger.log
