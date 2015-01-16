@@ -58,7 +58,7 @@ class Expression
   end
 end
 
-# Class for Thousand Units
+# Class for Thousands
 class ThousandExpression < Expression
   def one
     'M'
@@ -81,7 +81,7 @@ class ThousandExpression < Expression
   end
 end
 
-# Class for Hundred Units
+# Class for Hundreds
 class HundredExpression < Expression
   def one
     'C'
@@ -104,7 +104,7 @@ class HundredExpression < Expression
   end
 end
 
-# Class for Dozens Units
+# Class for Dozens
 class DozenExpression < Expression
   def one
     'X'
