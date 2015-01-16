@@ -32,3 +32,5 @@ Divided by type, we have such a structure:
   * Proxy
 
 Go inside any directory to see the code samples and to learn more about the design pattern.
+
+All sources are tested against Ruby 2.1. RuboCop compliant.
