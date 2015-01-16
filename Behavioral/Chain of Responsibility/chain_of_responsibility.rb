@@ -3,8 +3,8 @@ class Logger
   ERR = 3
   NOTICE = 5
   DEBUG = 7
-  @mask
-  @next_element
+  @mask = nil
+  @next_element = nil
 
   attr_writer :next_element
 
@@ -14,7 +14,7 @@ class Logger
 
   def message(message, priority)
     write_message(message) if priority <= @mask
-    @next_element.message(message, priority) if @next_element != nil
+    @next_element.message(message, priority) unless @next_element.nil?
   end
 end
 
