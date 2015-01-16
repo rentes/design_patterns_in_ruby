@@ -1,23 +1,23 @@
+# The command interface
 class Command
-  # The command interface
   def execute
   end
 end
 
+# The invoker class
 class Switch
-  # The invoker class
   def initialize
-    @history = Array.new
+    @history = []
   end
 
-  def store_and_execute (command)
+  def store_and_execute(command)
     command.execute
     @history.push(command)
   end
 end
 
+# The receiver class
 class Light
-  # The receiver class
   def turn_on
     puts 'The light is on'
   end
@@ -27,28 +27,30 @@ class Light
   end
 end
 
-class Flip_Up_Command < Command
-  def initialize (the_light)
+# The class that encapsulates the light turn on
+class FlipUpCommand < Command
+  def initialize(the_light)
     the_light.turn_on
   end
 end
 
-class Flip_Down_Command < Command
-  def initialize (the_light)
+# The class that encapsulates the light turn off
+class FlipDownCommand < Command
+  def initialize(the_light)
     the_light.turn_off
   end
 end
 
-class Press_Switch
-  # The client class
+# The client class
+class PressSwitch
   def initialize
     @lamp = Light.new
-    @switch_up = Flip_Up_Command.new(@lamp)
-    @switch_down = Flip_Down_Command.new(@lamp)
+    @switch_up = FlipUpCommand.new(@lamp)
+    @switch_down = FlipDownCommand.new(@lamp)
     @switch = Switch.new
   end
 
-  def switch (command)
+  def switch(command)
     cmd = command.strip.upcase
     if cmd == 'ON'
       @switch.store_and_execute(@switch_up)
@@ -60,7 +62,7 @@ class Press_Switch
   end
 end
 
-press_switch = Press_Switch.new
+press_switch = PressSwitch.new
 puts 'Switch ON test.'
 press_switch.switch('ON')
 puts 'Switch OFF test.'
