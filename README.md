@@ -21,7 +21,7 @@ Divided by type, we have such a structure:
   * Builder
   * Factory Method
   * Prototype
-  * [Singleton](Behavioral/Singleton)
+  * [Singleton](Creational/Singleton)
 * Structural
   * Adapter
   * Bridge
