@@ -6,9 +6,9 @@ Divided by type, we have such a structure:
 
 * Behavioral
   * [Chain of Responsibility](Behavioral/Chain of Responsibility)
-  * Command
-  * Interpreter
-  * Iterator
+  * [Command](Behavioral/Command)
+  * [Interpreter](Behavioral/Interpreter)
+  * [Iterator](Behavioral/Iterator)
   * Mediator
   * Memento
   * Observer
@@ -21,7 +21,7 @@ Divided by type, we have such a structure:
   * Builder
   * Factory Method
   * Prototype
-  * Singleton
+  * [Singleton](Behavioral/Singleton)
 * Structural
   * Adapter
   * Bridge
