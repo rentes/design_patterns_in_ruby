@@ -1,5 +1,5 @@
 # Design Patterns in Ruby
-The classic 23 design patterns from the ["Gang of Four"](http://en.wikipedia.org/wiki/Design_Patterns) implemented in
+The classic 23 design patterns from the [Gang of Four](http://en.wikipedia.org/wiki/Design_Patterns) implemented in
 Ruby.
 
 Divided by type, we have such a structure:
@@ -33,4 +33,4 @@ Divided by type, we have such a structure:
 
 Go inside any directory to see the code samples and to learn more about the design pattern.
 
-All sources are tested against Ruby 2.1. RuboCop compliant.
+All sources are tested against Ruby 2.1. [RuboCop](https://github.com/bbatsov/rubocop) compliant.
