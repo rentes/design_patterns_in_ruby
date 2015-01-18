@@ -36,4 +36,4 @@ Divided by type, we have such a structure:
 
 Go inside any directory to see the code samples and to learn more about the design pattern.
 
-All sources are tested against Ruby 2.1. [RuboCop](https://github.com/bbatsov/rubocop) compliant.
+All sources are tested against Ruby 2. [RuboCop](https://github.com/bbatsov/rubocop) compliant.
