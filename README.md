@@ -10,7 +10,7 @@ Divided by type, we have such a structure:
   * [Interpreter](Behavioral/Interpreter)
   * [Iterator](Behavioral/Iterator)
   * Mediator
-  * Memento
+  * [Memento](Behavioral/Memento)
   * Observer
   * State
   * Strategy
