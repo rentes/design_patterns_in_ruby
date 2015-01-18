@@ -1,4 +1,7 @@
 # Design Patterns in Ruby
+
+[![Code Climate](https://codeclimate.com/github/rentes/design_patterns_in_ruby/badges/gpa.svg)](https://codeclimate.com/github/rentes/design_patterns_in_ruby)
+
 The classic 23 design patterns from the [Gang of Four](http://en.wikipedia.org/wiki/Design_Patterns) implemented in
 Ruby.
 
