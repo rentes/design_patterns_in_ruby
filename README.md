@@ -16,7 +16,7 @@ Divided by type, we have such a structure:
   * [Mediator](Behavioral/Mediator)
   * [Memento](Behavioral/Memento)
   * [Observer](Behavioral/Observer)
-  * State
+  * [State](Behavioral/State)
   * Strategy
   * Template Method
   * Visitor
