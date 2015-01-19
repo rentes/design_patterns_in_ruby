@@ -17,7 +17,7 @@ Divided by type, we have such a structure:
   * [Memento](Behavioral/Memento)
   * [Observer](Behavioral/Observer)
   * [State](Behavioral/State)
-  * Strategy
+  * [Strategy](Behavioral/Strategy)
   * Template Method
   * Visitor
 * Creational
