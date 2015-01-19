@@ -15,7 +15,7 @@ Divided by type, we have such a structure:
   * [Iterator](Behavioral/Iterator)
   * [Mediator](Behavioral/Mediator)
   * [Memento](Behavioral/Memento)
-  * Observer
+  * [Observer](Behavioral/Observer)
   * State
   * Strategy
   * Template Method
