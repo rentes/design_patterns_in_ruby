@@ -13,7 +13,7 @@ Divided by type, we have such a structure:
   * [Command](Behavioral/Command)
   * [Interpreter](Behavioral/Interpreter)
   * [Iterator](Behavioral/Iterator)
-  * Mediator
+  * [Mediator](Behavioral/Mediator)
   * [Memento](Behavioral/Memento)
   * Observer
   * State
