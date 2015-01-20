@@ -19,7 +19,7 @@ Divided by type, we have such a structure:
   * [State](Behavioral/State)
   * [Strategy](Behavioral/Strategy)
   * [Template Method](Behavioral/Template Method)
-  * Visitor
+  * [Visitor](Behavioral/Visitor)
 * Creational
   * Abstract Factory
   * Builder
