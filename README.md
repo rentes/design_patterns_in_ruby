@@ -18,7 +18,7 @@ Divided by type, we have such a structure:
   * [Observer](Behavioral/Observer)
   * [State](Behavioral/State)
   * [Strategy](Behavioral/Strategy)
-  * Template Method
+  * [Template Method](Behavioral/Template Method)
   * Visitor
 * Creational
   * Abstract Factory
