@@ -30,7 +30,7 @@ Divided by type, we have such a structure:
   * Adapter
   * Bridge
   * Composite
-  * Decorator
+  * [Decorator](Structural/Decorator)
   * Facade
   * Flyweight
   * [Proxy](Structural/Proxy)
