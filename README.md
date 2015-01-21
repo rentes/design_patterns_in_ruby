@@ -29,7 +29,7 @@ Divided by type, we have such a structure:
 * Structural
   * Adapter
   * Bridge
-  * Composite
+  * [Composite](Structural/Composite)
   * [Decorator](Structural/Decorator)
   * Facade
   * Flyweight
