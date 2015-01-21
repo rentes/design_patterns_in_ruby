@@ -59,7 +59,7 @@ class Milk < CoffeeDecorator
   end
 
   def ingredients
-    @decorated_coffee.ingredients.to_s + @ingredient_separator + 'Milk'
+    @decorated_coffee.ingredients + @ingredient_separator + 'Milk'
   end
 end
 
@@ -74,7 +74,7 @@ class Whip < CoffeeDecorator
   end
 
   def ingredients
-    @decorated_coffee.ingredients.to_s + @ingredient_separator + 'Whip'
+    @decorated_coffee.ingredients + @ingredient_separator + 'Whip'
   end
 end
 
@@ -89,7 +89,7 @@ class Sprinkles < CoffeeDecorator
   end
 
   def ingredients
-    @decorated_coffee.ingredients.to_s + @ingredient_separator + 'Sprinkles'
+    @decorated_coffee.ingredients + @ingredient_separator + 'Sprinkles'
   end
 end
 
