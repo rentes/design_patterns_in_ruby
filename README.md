@@ -33,7 +33,7 @@ Divided by type, we have such a structure:
   * Decorator
   * Facade
   * Flyweight
-  * Proxy
+  * [Proxy](Structural/Proxy)
 
 Go inside any directory to see the code samples and to learn more about the design pattern.
 
