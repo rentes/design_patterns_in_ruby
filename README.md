@@ -32,7 +32,7 @@ Divided by type, we have such a structure:
   * [Composite](Structural/Composite)
   * [Decorator](Structural/Decorator)
   * Facade
-  * Flyweight
+  * [Flyweight](Structural/Flyweight)
   * [Proxy](Structural/Proxy)
 
 Go inside any directory to see the code samples and to learn more about the design pattern.
