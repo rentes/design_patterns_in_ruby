@@ -31,7 +31,7 @@ Divided by type, we have such a structure:
   * Bridge
   * [Composite](Structural/Composite)
   * [Decorator](Structural/Decorator)
-  * Facade
+  * [Facade](Structural/Facade)
   * [Flyweight](Structural/Flyweight)
   * [Proxy](Structural/Proxy)
 
