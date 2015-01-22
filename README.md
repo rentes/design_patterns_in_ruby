@@ -27,7 +27,7 @@ Divided by type, we have such a structure:
   * Prototype
   * [Singleton](Creational/Singleton)
 * Structural
-  * Adapter
+  * [Adapter](Structural/Adapter)
   * [Bridge](Structural/Bridge)
   * [Composite](Structural/Composite)
   * [Decorator](Structural/Decorator)
