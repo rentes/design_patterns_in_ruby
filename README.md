@@ -24,7 +24,7 @@ Divided by type, we have such a structure:
   * Abstract Factory
   * Builder
   * Factory Method
-  * Prototype
+  * [Prototype](Creational/Prototype)
   * [Singleton](Creational/Singleton)
 * Structural
   * [Adapter](Structural/Adapter)
