@@ -22,7 +22,7 @@ Divided by type, we have such a structure:
   * [Visitor](Behavioral/Visitor)
 * Creational
   * Abstract Factory
-  * Builder
+  * [Builder](Creational/Builder)
   * [Factory Method](Creational/Factory Method)
   * [Prototype](Creational/Prototype)
   * [Singleton](Creational/Singleton)
