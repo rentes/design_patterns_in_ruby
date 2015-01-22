@@ -23,7 +23,7 @@ Divided by type, we have such a structure:
 * Creational
   * Abstract Factory
   * Builder
-  * Factory Method
+  * [Factory Method](Creational/Factory Method)
   * [Prototype](Creational/Prototype)
   * [Singleton](Creational/Singleton)
 * Structural
