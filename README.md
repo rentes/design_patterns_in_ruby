@@ -21,7 +21,7 @@ Divided by type, we have such a structure:
   * [Template Method](Behavioral/Template Method)
   * [Visitor](Behavioral/Visitor)
 * Creational
-  * Abstract Factory
+  * [Abstract Factory](Creational/Abstract Factory)
   * [Builder](Creational/Builder)
   * [Factory Method](Creational/Factory Method)
   * [Prototype](Creational/Prototype)
