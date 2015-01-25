@@ -1,5 +1,5 @@
 require 'rake/testtask'
-require 'minitest/spec'
+require 'rspec'
 
 Rake::TestTask.new do |t|
   t.test_files = Dir.glob('spec/*_helper.rb')
