@@ -9,4 +9,4 @@ rvm:
   - 2.2.0
 
 after_success:
-  - coveralls
+  - coveralls push
