@@ -38,3 +38,4 @@ Gemfile.lock
 
 # Specific to Coveralls.io:
 .coveralls.yml
+/coverage/
