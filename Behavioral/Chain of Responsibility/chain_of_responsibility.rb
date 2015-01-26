@@ -63,7 +63,7 @@ class ChainOfResponsibility
   end
 end
 
-#chain = ChainOfResponsibility.new.create_chain
-#chain.message('Entering function y.', Logger::DEBUG)
-#chain.message('Step1 completed.', Logger::NOTICE)
-#chain.message('An error has occurred.', Logger::ERR)
+chain = ChainOfResponsibility.new.create_chain
+chain.message('Entering function y.', Logger::DEBUG)
+chain.message('Step1 completed.', Logger::NOTICE)
+chain.message('An error has occurred.', Logger::ERR)
