@@ -9,7 +9,7 @@ RSpec.configure do |config|
   end
 end
 
-def capture_stdout(&block)
+def capture_stdout
   original_stdout = $stdout
   $stdout = fake = StringIO.new
   begin
