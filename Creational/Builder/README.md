@@ -1,2 +1,4 @@
 # Builder
-This pattern constructs complex objects by separating construction and representation.
+This pattern constructs complex objects by separating construction and representation. This pattern avoids the telescoping constructor anti-pattern, which occurs when the increase of the object constructor parameter combination leads to an exponential list of constructors. Instead of using numerous constructors, the builder pattern uses another object, called the builder, that receives each initialization parameter, step by step, and then returns the resulting constructed object at once.
+
+Another advantage is that it can be used for objects that contain flat data, i.e., data that can't be easily edited, e.g., HTML code, and SQL query, a X.509 certificate, etc.. This type of data can't be edited step by step and must be edited at once. The best way to construct such an object is to use a builder class.
