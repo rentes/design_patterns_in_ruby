@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
-gem 'rake'
-gem 'coveralls', require: false
+
+gem 'rubocop', require: false
 gem 'rspec'
-gem "codeclimate-test-reporter", group: :test, require: nil
+
+group :test do
+  gem 'codeclimate-test-reporter', '~> 0.4.7'
+  gem 'simplecov', '~> 0.9.2'
+end
