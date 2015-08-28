@@ -42,3 +42,6 @@ Gemfile.lock
 
 # Specific to codeclimate
 .codeclimate.yml
+
+# Specific for rspec
+.rspec
