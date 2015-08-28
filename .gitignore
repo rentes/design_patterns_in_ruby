@@ -45,3 +45,6 @@ Gemfile.lock
 
 # Specific for rspec
 .rspec
+
+# Specific for travis CI
+.travis.yml
