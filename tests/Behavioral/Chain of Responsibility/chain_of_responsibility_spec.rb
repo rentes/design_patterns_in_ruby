@@ -1,4 +1,4 @@
-require_relative '../../../spec/spec_helper'
+require_relative '../../../tests/spec_helper'
 require_relative '../../../Behavioral/Chain of Responsibility/chain_of_responsibility'
 
 describe ChainOfResponsibility do
