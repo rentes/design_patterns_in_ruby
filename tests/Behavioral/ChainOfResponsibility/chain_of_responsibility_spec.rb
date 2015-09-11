@@ -1,5 +1,5 @@
 require_relative '../../../tests/spec_helper'
-require_relative '../../../Behavioral/Chain of Responsibility/chain_of_responsibility'
+require_relative '../../../Behavioral/ChainOfResponsibility/chain_of_responsibility'
 
 describe ChainOfResponsibility do
   it 'returns output test on stdout from the logger debbug' do
