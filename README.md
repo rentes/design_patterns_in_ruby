@@ -9,7 +9,7 @@ Ruby.
 Divided by type, we have such a structure:
 
 * Behavioral
-  * [Chain of Responsibility](Behavioral/Chain of Responsibility)
+  * [Chain of Responsibility](Behavioral/ChainOfResponsibility)
   * [Command](Behavioral/Command)
   * [Interpreter](Behavioral/Interpreter)
   * [Iterator](Behavioral/Iterator)
@@ -18,12 +18,12 @@ Divided by type, we have such a structure:
   * [Observer](Behavioral/Observer)
   * [State](Behavioral/State)
   * [Strategy](Behavioral/Strategy)
-  * [Template Method](Behavioral/Template Method)
+  * [Template Method](Behavioral/TemplateMethod)
   * [Visitor](Behavioral/Visitor)
 * Creational
-  * [Abstract Factory](Creational/Abstract Factory)
+  * [Abstract Factory](Creational/AbstractFactory)
   * [Builder](Creational/Builder)
-  * [Factory Method](Creational/Factory Method)
+  * [Factory Method](Creational/FactoryMethod)
   * [Prototype](Creational/Prototype)
   * [Singleton](Creational/Singleton)
 * Structural
